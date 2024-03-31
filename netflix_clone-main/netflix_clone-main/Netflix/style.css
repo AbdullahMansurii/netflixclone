@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black ;
+}
+.main{
+    position:relative;
+    background-image: url(Img/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(2200px,100vw);
+    height: 99vh;
+}
+.main .box{
+    height: 99vh;
+    width: 100%;
+    opacity: 0.65;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    /* background-image:radial-gradient(rgb(51, 50, 50),rgb(54, 49, 49),rgb(27, 24, 24),rgb(20, 19, 19),black); */
+}
+nav{
+    display: flex;
+    max-width: 80vw;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+@media screen and (max-width:960px) {
+    nav {
+        flex-wrap: wrap;
+    }
+}
+nav img{
+    height: 99px;
+    width: 180px;
+    position: relative;
+    z-index: 10;
+}
+nav div{
+    z-index: 10;
+    position: relative;
+}
+.hero{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(100% - 104px);
+    color: white;
+    font-size: larger;
+    gap: 23px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+.hero> :first-child{
+    font-size: 50px;
+    font-weight: bolder;
+}
+.hero> :nth-child(2){
+    font-size: 25px;
+    font-weight: 500;
+}
+.hero> :nth-child(3){
+    font-size: 20px;
+}
+.line {
+    height: 7px;
+    background-color: rgb(100, 99, 99);
+    width: 100%;
+}
+.btn{
+    padding: 9px 29px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgba(7, 7, 7, 0.723);
+    border-radius: 6px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.244);
+}
+@media  screen and (max-width:600px) {
+    .btn1{
+       visibility: hidden;
+    }
+}
+.Email{
+    display: flex;
+}
+.btn-red-sm{
+    padding: 9px 17px;
+    background-color: red;
+    margin: 0px 10px;
+    color: white;
+}
+.btn-red{
+    padding: 11px 25px;
+    background-color: red;
+    color: white;
+    font-size: medium;
+    font-weight: 400;
+    margin-left: 3px;
+}
+.main input{
+    padding: 14px 42px 10px 7px;
+    height: 25px;
+    font-size: medium;
+    color: white;
+    border-radius: 4px;
+    background-color: rgba(23,23,23,0.7);
+    border: 1px solid rgba(247, 244, 244, 0.4);
+    width: 330px;
+}
+.sec1{
+    display: flex;
+    position: relative;
+    margin: 0px 90px;
+    justify-content: center;
+    align-items: center;
+}
+.sec1-1{
+    max-width: 70vw;
+    color: white;
+}
+.sec1-1 :nth-child(1){
+    font-size: 45px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+}
+.sec1-1 p{
+    font-size:24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+}
+.Imgsec{
+    position:relative;
+}
+.Imgsec img,.imgsec3 img{
+    max-width: 30vw;
+    position: relative;
+    z-index: 9;
+}
+.videodiv{
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    position: absolute;
+    top: 21%;
+    left: 13%;
+}
+.videodiv2{
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 62%;
+    max-height: 51%;
+    position: absolute;
+    top: 7%;
+    left: 18%;
+}
+
+section{
+    margin: 60px 0px;
+}
+
+.faq{
+    color: white;
+    font-size:40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    gap:10px;
+    align-items: center;
+}
+.fac h1{
+    letter-spacing: 3px;
+}
+.faqbox{
+    background-color: rgb(61, 61, 61);
+    width: 80vw;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0px 20px;
+    font-size: 23px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.footer{
+    margin: 0px 90px;
+    gap: 10px;
+}
+.footer a{
+    color: rgb(186, 193, 200);
+    font-size: 17px;
+}
+.footerbox{
+    column-count: 4;
+    gap: 5px;
+}
+.footerbox ul li{
+    gap:10px;
+}
+.footer span{
+    color: rgb(186, 193, 200);
+    font-size: 17px;
+}
